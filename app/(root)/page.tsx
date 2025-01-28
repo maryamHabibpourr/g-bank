@@ -1,5 +1,24 @@
 import HeaderBox from "@/components/HeaderBox";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
+import RightSidebar from "@/components/RightSidebar";
+
+
+const loggedIn =  {
+  $id: "defqhjkgewq",
+  email: "maryam@gmail.com",
+  userId: "jhhol",
+  dwollaCustomerUrl: "dfcvhksgdj",
+  dwollaCustomerId: "hjkgsdvfk",
+  firstName: "maryam",
+  lastName: "habibpour",
+  name: "maryam",
+  address1: "ghsd",
+  city: "hjmdg",
+  state: "jlkgg.f",
+  postalCode: "hfh",
+  dateOfBirth: "jcfkgdse",
+  ssn: "jfdvjkfd"
+};
 
 
 export default function Home() {
@@ -20,9 +39,13 @@ export default function Home() {
             totalCurrentBalance={1250}
           />
       </header>
-    </div>
 
-  
+    </div>
+      <RightSidebar
+         user={loggedIn}
+          transactions={[]}
+          banks={[{currentBalance:125.35},{currentBalance:500.20}]}
+      />
   </section>
   );
 }
